@@ -5,6 +5,10 @@ public class Calculator {
 	 * lowerCase
 	 * 
 	 */
+	
+	public Calculator() {
+		System.out.println("Called constructor");
+	}
 
 	public void add() {
 		System.out.println("Adding some numbers");
@@ -23,9 +27,11 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		System.out.println("Hello World 2!!!");
-
+		Calculator calc = new Calculator();
+		calc.add();
+		calc.sub();
+		calc.div();
+		calc.mult();
 	}
 
 }
